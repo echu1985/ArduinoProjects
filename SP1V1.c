@@ -44,12 +44,12 @@ int mode = 0;
 
 //Delays Ciclos
 int modeDelay = 20000;  //Tiempo de shows(encendido y apagado valvulas)
-int delayloop = 30000;   //Tiempo de Corrida (encendido y apagado valvulas secuenciador)
-int delaycen = 60000;   //Tiempo de Centrales (Tiempo encendido picos centrales SHOW2)
+unsigned int delayloop = 30000;   //Tiempo de Corrida (encendido y apagado valvulas secuenciador)
+unsigned int delaycen = 60000;   //Tiempo de Centrales (Tiempo encendido picos centrales SHOW2)
 
 int actualdelay = delayloop;  //Define el tiempo de duracion del paso actual dentro de un show. Por defecto
                               //hay que setearlo a delayloop
-int showloopcount = 0;  //Contador de los ciclos de un show. Resetea al llegar a delayloop
+unsigned int showloopcount = 0;  //Contador de los ciclos de un show. Resetea al llegar a delayloop
 int showstep = 0;       //Paso actual dentro de un show
 
 
